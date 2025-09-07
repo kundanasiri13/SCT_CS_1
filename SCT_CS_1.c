@@ -17,3 +17,6 @@ void caesarDecrypt(char text[], int shift) {
     // Decrypting is same as encrypting with -shift
     caesarEncrypt(text, -shift);
 }
+int main() {
+    char message[1000];
+    int shift;
