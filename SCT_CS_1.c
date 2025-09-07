@@ -32,4 +32,9 @@ int main() {
     
     caesarEncrypt(encrypted, shift);
     caesarDecrypt(decrypted, shift);
+    printf("\nOriginal Message: %s\n", message);
+    printf("Encrypted Message: %s\n", encrypted);
+    printf("Decrypted Message: %s\n", decrypted);
     
+    return 0;
+}
