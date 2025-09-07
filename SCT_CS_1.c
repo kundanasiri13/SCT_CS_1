@@ -20,3 +20,9 @@ void caesarDecrypt(char text[], int shift) {
 int main() {
     char message[1000];
     int shift;
+    printf("Enter a message: ");
+    fgets(message, sizeof(message), stdin);
+    message[strcspn(message, "\n")] = '\0'; // remove newline
+    
+    printf("Enter shift value: ");
+    scanf("%d", &shift);
