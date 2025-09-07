@@ -26,3 +26,10 @@ int main() {
     
     printf("Enter shift value: ");
     scanf("%d", &shift);
+    char encrypted[1000], decrypted[1000];
+    strcpy(encrypted, message);
+    strcpy(decrypted, message);
+    
+    caesarEncrypt(encrypted, shift);
+    caesarDecrypt(decrypted, shift);
+    
